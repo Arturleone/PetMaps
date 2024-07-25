@@ -9,91 +9,48 @@
     android:orientation="vertical"
     tools:context=".Login">
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/voltar"
             android:layout_width="40dp"
             android:layout_height="39dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/voltar" />
 
         <TextView
-            android:layout_width="350dp"
+            android:id="@+id/textView6"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="60dp"
             android:fontFamily="@font/firasans"
             android:text="Vamos começar seu cadastro"
-            android:textAlignment="textStart"
+            android:textAlignment="center"
             android:textColor="#3A1A01"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="350dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="5dp"
-            android:orientation="vertical">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:background="@drawable/edittext_border"
-                android:hint="Nome completo"
-                android:padding="8dp"
-                android:textSize="15sp" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/edittext_border"
-                android:hint="Apelido"
-                android:padding="8dp"
-                android:textSize="15sp" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/edittext_border"
-                android:hint="Endereço de e-mail"
-                android:padding="8dp"
-                android:textSize="15sp" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/edittext_border"
-                android:hint="Número de telefone"
-                android:padding="8dp"
-                android:textSize="15sp" />
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-            <Button
-                android:layout_width="350dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="15dp"
-                android:backgroundTint="#EAA353"
-                android:gravity="top|center_horizontal"
-                android:text="Cadastrar"
-                android:textSize="16dp"
-                android:textStyle="bold" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-            />
-
-        </LinearLayout>
-
-    </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
