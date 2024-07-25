@@ -12,6 +12,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
@@ -22,31 +23,115 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
-        <ImageView
-            android:id="@+id/voltar"
-            android:layout_width="40dp"
-            android:layout_height="39dp"
-
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="4dp"
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="700dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/voltar" />
+            android:layout_marginTop="40dp">
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="60dp"
-            android:fontFamily="@font/firasans"
-            android:text="Vamos começar seu cadastro"
-            android:textAlignment="center"
-            android:textColor="#3A1A01"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/firasans"
+                android:text="Vamos começar seu cadastro"
+                android:textAlignment="center"
+                android:textColor="#3A1A01"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:layout_width="299dp"
+                android:layout_height="42dp"
+                android:background="@drawable/edittext_border"
+                android:fontFamily="@font/firasans"
+                android:hint="Número de celular ou email"
+                android:padding="8dp"
+                android:textColor="#3A1A01"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:layout_width="299dp"
+                android:layout_height="42dp"
+                android:background="@drawable/edittext_border"
+                android:fontFamily="@font/firasans"
+                android:hint="Nome completo"
+                android:padding="8dp"
+                android:textColor="#3A1A01"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:layout_width="299dp"
+                android:layout_height="42dp"
+                android:background="@drawable/edittext_border"
+                android:fontFamily="@font/firasans"
+                android:hint="Nome de usuário"
+                android:padding="8dp"
+                android:textColor="#3A1A01"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:layout_width="299dp"
+                android:layout_height="42dp"
+                android:background="@drawable/edittext_border"
+                android:fontFamily="@font/firasans"
+                android:hint="Senha"
+                android:padding="8dp"
+                android:textColor="#3A1A01"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:layout_width="299dp"
+                android:layout_height="42dp"
+                android:background="@drawable/edittext_border"
+                android:fontFamily="@font/firasans"
+                android:hint="Confirmar senha"
+                android:padding="8dp"
+                android:textColor="#3A1A01"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/loginpet"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#EAA353"
+                android:fontFamily="serif-monospace"
+                android:text="Cadastrar"
+                android:textColor="@color/Branco"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_marginTop="15dp"
+                android:id="@+id/possuocadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Possuo cadastro>"
+                android:textColor="@color/Preto"
+                android:textStyle="italic"
+                />
+
+
+        </LinearLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
