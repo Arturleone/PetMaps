@@ -49,18 +49,21 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
+                android:id="@+id/Numero"
                 android:layout_width="299dp"
                 android:layout_height="42dp"
                 android:background="@drawable/edittext_border"
                 android:fontFamily="@font/firasans"
-                android:hint="Número de celular ou email"
+                android:hint="Número de celular"
                 android:padding="8dp"
                 android:textColor="#3A1A01"
                 android:textSize="15sp"
                 android:textStyle="bold"
+                android:inputType="phone"
                 />
 
             <EditText
+                android:id="@+id/Nome"
                 android:layout_width="299dp"
                 android:layout_height="42dp"
                 android:background="@drawable/edittext_border"
@@ -70,8 +73,10 @@
                 android:textColor="#3A1A01"
                 android:textSize="15sp"
                 android:textStyle="bold"
+                android:layout_marginTop="5dp"
                 />
             <EditText
+                android:id="@+id/NomeUsur"
                 android:layout_width="299dp"
                 android:layout_height="42dp"
                 android:background="@drawable/edittext_border"
@@ -81,8 +86,11 @@
                 android:textColor="#3A1A01"
                 android:textSize="15sp"
                 android:textStyle="bold"
+                android:layout_marginTop="5dp"
+
                 />
             <EditText
+                android:id="@+id/SenhaCadastro"
                 android:layout_width="299dp"
                 android:layout_height="42dp"
                 android:background="@drawable/edittext_border"
@@ -92,8 +100,13 @@
                 android:textColor="#3A1A01"
                 android:textSize="15sp"
                 android:textStyle="bold"
+                android:inputType="textPassword"
+                android:layout_marginTop="5dp"
+
                 />
+
             <EditText
+                android:id="@+id/ConfirmSenha"
                 android:layout_width="299dp"
                 android:layout_height="42dp"
                 android:background="@drawable/edittext_border"
@@ -103,10 +116,28 @@
                 android:textColor="#3A1A01"
                 android:textSize="15sp"
                 android:textStyle="bold"
+                android:inputType="textPassword"
+                android:layout_marginTop="5dp"
+
+                />
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="299dp"
+                android:layout_height="42dp"
+                android:background="@drawable/edittext_border"
+                android:fontFamily="@font/firasans"
+                android:hint="Email"
+                android:padding="8dp"
+                android:textColor="#3A1A01"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="5dp"
                 />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/loginpet"
+                android:id="@+id/cadastroPet"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="15dp"

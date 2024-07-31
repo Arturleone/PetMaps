@@ -20,8 +20,6 @@ class Login : AppCompatActivity() {
         loginRedes.setOnClickListener{
             Toast.makeText(this, "Função Desabilitada", Toast.LENGTH_SHORT).show()
         }
-
-
         cadastrar.setOnClickListener{
             startActivity(Intent(this, Cadastro::class.java))
             finish()
@@ -31,5 +29,6 @@ class Login : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
     }
 }
