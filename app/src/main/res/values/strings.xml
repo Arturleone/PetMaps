@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PetMaps</string>
+    <string name="styled_text">Bem-vindo ao PetMaps.\nJunte-se à causa</string>
 </resources>

@@ -13,12 +13,11 @@ class HomeScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_homescreen)
-
-        val botao = findViewById<Button>(R.id.comecar)
-        botao.setOnClickListener{
+        val iniciar = findViewById<Button>(R.id.Começar)
+        iniciar.setOnClickListener {
             startActivity(Intent(this, Login::class.java))
-            finish()
         }
+
     }
 }
 

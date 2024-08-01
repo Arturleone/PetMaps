@@ -7,62 +7,67 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradiente_color"
     android:orientation="vertical"
-    tools:context=".HomeScreen" >
+    tools:context=".HomeScreen">
 
-    <ScrollView
+    <ImageView
+        android:id="@+id/background_image"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="128dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="48dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
 
-            <ImageView
-                android:id="@+id/background_image"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/home" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#5C5F6463"
+        android:text="Brazil"
+        android:textColor="@color/Branco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/icon_image"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/icon"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:fontFamily="@font/firasans"
+        android:text="@string/styled_text"
+        android:textAlignment="center"
+        android:textColor="@color/Branco"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginTop="600dp"
-                android:orientation="vertical"
-                >
-
-                <Button
-                    android:id="@+id/comecar"
-                    android:layout_width="300dp"
-                    android:layout_height="40dp"
-                    android:backgroundTint="#EAA353"
-                    android:text="COMEÇAR"/>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:layout_weight="1"
-                    android:background="#EAA353"/>
-            </LinearLayout>
-
-
-        </RelativeLayout>
-    </ScrollView>
-
+    <Button
+        android:id="@+id/Começar"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#D37D1B"
+        android:text="Começar"
+        android:textColor="@color/Branco"
+        app:layout_constraintBottom_toBottomOf="@+id/background_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
