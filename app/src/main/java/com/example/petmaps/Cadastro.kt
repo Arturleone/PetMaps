@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Patterns
+import android.view.View
 import android.widget.Button
 import android.widget.EdgeEffect
 import android.widget.EditText
@@ -22,6 +23,8 @@ class Cadastro : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_cadastro)
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+        actionBar?.show()
 
         val possuoCadastro = findViewById<TextView>(R.id.possuocadastro)
         val nome = findViewById<EditText>(R.id.Nome)
@@ -51,7 +54,7 @@ class Cadastro : AppCompatActivity() {
 
             if (inputEmail.isBlank() || inputUsuarCadastro.isBlank() || inputSenha.isBlank() || inputNome.isBlank() || inputNumero.isBlank() || inputConfirmSenha.isBlank()) {
                 errorShowMensage("Todos os campos são obrigatórios")
-            } else if (verificarNumber(inputNumero)) {
+            } else if (!verificarNumber(inputNumero)) {
                 numero.error = "Número Incorreto"
             } else if(!verificarSenha(inputSenha)) {
                 senha.error = "A senha deve ter no mínimo 8 caracteres, conter pelo menos uma letra maiúscula e um caractere especial."
@@ -62,7 +65,8 @@ class Cadastro : AppCompatActivity() {
                 email.error = "Email Incorreto"
             } else {
                 Toast.makeText(this, "Cadastro Conluído!!", Toast.LENGTH_SHORT).show()
-                adicionarUsua(inputUsuarCadastro, inputSenha)
+                val newPassword = inputSenha.replace(" ", "")
+                adicionarUsua(inputUsuarCadastro, newPassword)
                 val intent = Intent(this, Login::class.java)
                 startActivity(intent)
                 finish()
@@ -91,8 +95,8 @@ class Cadastro : AppCompatActivity() {
     private fun adicionarUsua(usuario: String, senha: String) {
         val sharedPreferences: SharedPreferences = getSharedPreferences("", MODE_PRIVATE)
         val Usuarios = sharedPreferences.edit()
-        Usuarios.putString("usuario", usuario)
-        Usuarios.putString("senha", senha)
+        Usuarios.putString("usuar", usuario)
+        Usuarios.putString("password", senha)
         Usuarios.apply()
     }
 }

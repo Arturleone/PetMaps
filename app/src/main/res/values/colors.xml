@@ -2,4 +2,5 @@
 <resources>
     <color name="Preto">#FF000000</color>
     <color name="Branco">#FFFFFFFF</color>
+    <color name="Vermelho">#FF9C9C</color>
 </resources>

@@ -8,7 +8,7 @@
     android:background="#FFE7A6"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".SplashScreen">
 
         <ImageView
             android:id="@+id/cachorro"
