@@ -15,11 +15,10 @@
         android:src="@drawable/maps"
         android:scaleType="centerCrop"/>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#FFDE87"
-        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -28,66 +27,114 @@
             android:id="@+id/Bolonha"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:src="@drawable/menu" />
 
         <EditText
-            android:layout_width="250dp"
+            android:id="@+id/editText"
+            android:layout_width="400dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/edittext_border" />
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/edittext_border"
+            android:textScaleX="@integer/material_motion_duration_long_1"
+            android:drawableRight="@drawable/pesquisar"
+            />
 
         <ImageView
             android:layout_width="35dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="0dp"
-
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-60dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="-3dp"
+            android:layout_toEndOf="@+id/editText"
             android:src="@drawable/pesquisar" />
-    </LinearLayout>
+    </RelativeLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#FFDE87"
-        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
+            android:id="@+id/imageView6"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
             android:src="@drawable/p" />
 
         <ImageView
+            android:id="@+id/imageView5"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/imageView6"
             android:src="@drawable/m" />
 
         <ImageView
+            android:id="@+id/imageView3"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="198dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginBottom="0dp"
             android:src="@drawable/icon" />
 
         <ImageView
+            android:id="@+id/imageView2"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toStartOf="@+id/imageView"
             android:src="@drawable/g" />
 
         <ImageView
+            android:id="@+id/imageView"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="0dp"
             android:src="@drawable/pp" />
 
 
-    </LinearLayout>
+    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
