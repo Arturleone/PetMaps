@@ -64,9 +64,9 @@ class Cadastro : AppCompatActivity() {
             } else if (!verificarEmail(inputEmail)) {
                 email.error = "Email Incorreto"
             } else {
-                Toast.makeText(this, "Cadastro Conluído!!", Toast.LENGTH_SHORT).show()
                 val newPassword = inputSenha.replace(" ", "")
                 adicionarUsua(inputUsuarCadastro, newPassword)
+                Toast.makeText(this, "Cadastro Conluído!!", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, Login::class.java)
                 startActivity(intent)
                 finish()
@@ -92,11 +92,11 @@ class Cadastro : AppCompatActivity() {
         if(Patterns.PHONE.matcher(numero).matches()) return true else return false
     }
 
-    private fun adicionarUsua(usuario: String, senha: String) {
-        val sharedPreferences: SharedPreferences = getSharedPreferences("", MODE_PRIVATE)
+    private fun adicionarUsua(username: String, password: String) {
+        val sharedPreferences: SharedPreferences = getSharedPreferences("PREFS", MODE_PRIVATE)
         val Usuarios = sharedPreferences.edit()
-        Usuarios.putString("usuar", usuario)
-        Usuarios.putString("password", senha)
+        Usuarios.putString("username", username)
+        Usuarios.putString("password", password)
         Usuarios.apply()
     }
 }

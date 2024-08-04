@@ -84,9 +84,9 @@ class Login : AppCompatActivity() {
     }
 
     private fun valitedLogin(username: String, password: String): Boolean {
-        val sharedPreferences: SharedPreferences = getSharedPreferences("Cadastro", MODE_PRIVATE)
-        val getUsua = sharedPreferences.getString("usuar", null)
-        val getPassword = sharedPreferences.getString("password", null)
-        return username == getUsua && password == getPassword
+        val sharedPreferences: SharedPreferences = getSharedPreferences("PREFS", MODE_PRIVATE)
+        val storedUsername = sharedPreferences.getString("username", null)
+        val storedPassword = sharedPreferences.getString("password", null)
+        return username == storedUsername && password == storedPassword
     }
 }
