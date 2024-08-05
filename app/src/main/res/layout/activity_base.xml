@@ -5,21 +5,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/drawer_layout"
     >
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/Content_Frame"
-        />
+        android:id="@+id/content_layout"/>
 
     <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:menu="@menu/drawer_layout"
-        />
-
+        app:headerLayout="@layout/nav_header"
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
