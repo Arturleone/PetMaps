@@ -3,7 +3,9 @@ package com.example.petmaps
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
@@ -16,11 +18,18 @@ class Telainicial : AppCompatActivity(), NavigationView.OnNavigationItemSelected
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_telainicial)
+        setContentView(R.layout.activity_base)
 
         drawerLayout = findViewById(R.id.drawerLayout)
         val navView = findViewById<NavigationView>(R.id.navView)
         navView.setNavigationItemSelectedListener (this)
+
+        layoutInflater.inflate(R.layout.activity_telainicial, findViewById(R.id.frame_content))
+        val botao = findViewById<ImageView>(R.id.menu)
+        botao.setOnClickListener{
+            drawerLayout.openDrawer(GravityCompat.START)
+        }
+
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
@@ -31,7 +40,8 @@ class Telainicial : AppCompatActivity(), NavigationView.OnNavigationItemSelected
             R.id.nav_contact -> {
 
             }
-            drawerLayout.closeDrawer()
         }
+        drawerLayout.closeDrawer(GravityCompat.START)
+        return true
     }
 }

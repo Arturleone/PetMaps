@@ -1,14 +1,31 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/nav_home"
-        android:title="Home" />
-    <item
-        android:id="@+id/nav_worldskills"
-        android:title="WorldSkills" />
-    <item
-        android:id="@+id/nav_contact"
-        android:title="Contact" />
-    <item
-        android:id="@+id/nav_settings"
-        android:title="Settings" />
+
+    <group
+        />
+    <group>
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_worldskills"
+            android:title="WorldSkills" />
+        <item
+            android:id="@+id/nav_contact"
+            android:title="Contact" />
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Settings" />
+
+    </group>
+    <group>
+        <item
+            android:id="@+id/sair"
+            android:title="Deslogar"
+            />
+
+        <item
+            android:id="@+id/nav_encerrarApp"
+            android:title="Encerrar App"
+            />
+    </group>
 </menu>

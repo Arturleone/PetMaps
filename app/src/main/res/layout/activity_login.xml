@@ -70,25 +70,38 @@
                             android:background="@drawable/edittext_border"
                             android:fontFamily="@font/firasans"
                             android:hint="Usuário"
-                            android:padding="8dp"
+                            android:padding="15dp"
                             android:textColor="#3A1A01"
                             android:textSize="15sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:textColorHint="#FFB1B1B1"
+                            />
 
-                        <EditText
-                            android:id="@+id/SenhaUsur"
+                        <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_marginTop="10dp"
-                            android:background="@drawable/edittext_border"
-                            android:drawableRight="@drawable/baseline_remove_red_eye_24"
-                            android:inputType="textPassword"
-                            android:fontFamily="@font/firasans"
-                            android:hint="Senha"
-                            android:padding="8dp"
-                            android:textColor="#3A1A01"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
+                            android:layout_height="wrap_content"
+                            app:passwordToggleEnabled="true"
+                            android:textColorHint="#FFB1B1B1"
+                            app:hintTextColor="#3A1A01"
+                            >
+
+                            <EditText
+                                android:id="@+id/SenhaUsur"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/edittext_border"
+                                android:inputType="textPassword"
+                                android:fontFamily="@font/firasans"
+                                android:hint="Senha"
+                                android:padding="8dp"
+                                android:textColor="#3A1A01"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                />
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
 
                         <TextView
                             android:id="@+id/textView4"
