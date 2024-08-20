@@ -30,7 +30,7 @@ class Login : AppCompatActivity() {
         val loginPets = findViewById<Button>(R.id.loginpet)
 
         // Obtém o drawable do fundo padrão dos recursos
-        val defaultBackground = ContextCompat.getDrawable(this, R.drawable.edittext_border)
+        val defaultBackground = ContextCompat.getDrawable(this, R.drawable.edittext_borderwhite)
         // Cor de erro
         val backgroundRed = ContextCompat.getDrawable(this, R.drawable.edittext_border_red)
 
