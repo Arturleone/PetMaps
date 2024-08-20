@@ -1,31 +1,40 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group
+
+    <item
+        android:id="@+id/nav_perfil"
+        android:title="Meu perfil"
+        android:icon="@drawable/perfil"
         />
-    <group>
-        <item
-            android:id="@+id/nav_home"
-            android:title="Home" />
-        <item
-            android:id="@+id/nav_worldskills"
-            android:title="WorldSkills" />
-        <item
-            android:id="@+id/nav_contact"
-            android:title="Contact" />
-        <item
-            android:id="@+id/nav_settings"
-            android:title="Settings" />
+    <item
+        android:id="@+id/nav_ongs"
+        android:title="Ong's"
+        android:icon="@drawable/ongs"
+        />
+    <item
+        android:id="@+id/nav_favoritos"
+        android:title="Favoritos"
+        android:icon="@drawable/favorito"
+        />
+    <item
+        android:id="@+id/nav_petstops"
+        android:title="PetStops"
+        android:icon="@drawable/petshop"
+        />
+    <item
+        android:id="@+id/nav_clinicas"
+        android:title="Clínica"
+        android:icon="@drawable/clinica"
+        />
+    <item
+        android:id="@+id/nav_notificacao"
+        android:title="Notificação"
+        android:icon="@drawable/notificacao"
+        />
+    <item
+        android:id="@+id/nav_doacao"
+        android:title="Doação "
+        android:icon="@drawable/doacao"
+        />
 
-    </group>
-    <group>
-        <item
-            android:id="@+id/sair"
-            android:title="Deslogar"
-            />
-
-        <item
-            android:id="@+id/nav_encerrarApp"
-            android:title="Encerrar App"
-            />
-    </group>
 </menu>

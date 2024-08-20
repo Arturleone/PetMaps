@@ -16,7 +16,9 @@
         android:id="@+id/navView"
         app:menu="@menu/drawer_layout"
         android:layout_gravity="start"
-        app:headerLayout="@layout/nav_header" />
+        app:headerLayout="@layout/nav_header"
+        android:background="@color/Branco"
+        />
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

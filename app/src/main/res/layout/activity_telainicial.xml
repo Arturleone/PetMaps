@@ -12,13 +12,15 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:scaleType="centerCrop"
         android:src="@drawable/maps"
-        android:scaleType="centerCrop"/>
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#FFDE87"
+        android:background="#FFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -49,6 +51,8 @@
             android:background="@drawable/edittext_border"
             android:textScaleX="@integer/material_motion_duration_long_1"
             android:drawableRight="@drawable/pesquisar"
+
+
             />
 
         <ImageView
@@ -66,10 +70,16 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#FFDE87"
+        android:background="#FFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Cinza"
+            android:layout_alignParentTop="true"/>
 
         <ImageView
             android:id="@+id/imageView6"
@@ -97,16 +107,16 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
+            android:layout_width="49dp"
+            android:layout_height="53dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="198dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="200dp"
-            android:layout_marginBottom="0dp"
+            android:layout_marginStart="181dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="180dp"
+            android:layout_marginBottom="3dp"
             android:src="@drawable/icon" />
 
         <ImageView

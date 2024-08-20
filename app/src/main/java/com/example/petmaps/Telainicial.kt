@@ -34,12 +34,6 @@ class Telainicial : AppCompatActivity(), NavigationView.OnNavigationItemSelected
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId) {
-            R.id.nav_home -> {
-
-            }
-            R.id.nav_contact -> {
-
-            }
         }
         drawerLayout.closeDrawer(GravityCompat.START)
         return true
