@@ -25,6 +25,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Cinza"
+            android:layout_alignParentBottom="true"/>
+
         <ImageView
             android:id="@+id/menu"
             android:layout_width="30dp"

@@ -5,9 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Branco"
+    android:background="@color/background_light"
     android:orientation="vertical"
-    tools:context=".Login">
+    tools:context=".Login"
+    >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,10 +26,11 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="366dp"
-                android:src="@drawable/voltar" />
+                android:src="@drawable/voltar"
+                android:textColor="@color/text_primary_light"
+                />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -55,7 +57,7 @@
                     android:fontFamily="@font/firasans"
                     android:gravity="center"
                     android:text="PetMaps"
-                    android:textColor="#3A1A01"
+                    android:textColor="@color/text_primary_light"
                     android:textSize="50sp"
                     android:textStyle="bold" />
 
@@ -65,7 +67,7 @@
                     android:fontFamily="@font/firasans"
                     android:text="CADASTRO"
                     android:textAlignment="center"
-                    android:textColor="#3A1A01"
+                    android:textColor="@color/text_primary_light"
                     android:textSize="15dp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
@@ -80,9 +82,10 @@
                         android:id="@+id/Numero"
                         android:layout_width="match_parent"
                         android:layout_height="42dp"
-                        android:background="@drawable/edittext_border"
+                        android:background="@drawable/edittext_borderwhite"
                         android:fontFamily="@font/firasans"
                         android:hint="Número de celular"
+                        android:textColorHint="@color/color_hint_text"
                         android:inputType="phone"
                         android:padding="8dp"
                         android:textColor="#3A1A01"
@@ -94,26 +97,28 @@
                         android:layout_width="match_parent"
                         android:layout_height="42dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/edittext_border"
+                        android:background="@drawable/edittext_borderwhite"
                         android:fontFamily="@font/firasans"
                         android:hint="Nome completo"
                         android:padding="8dp"
                         android:textColor="#3A1A01"
                         android:textSize="15sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColorHint="@color/color_hint_text"/>
 
                     <EditText
                         android:id="@+id/NomeUsur"
                         android:layout_width="match_parent"
                         android:layout_height="42dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/edittext_border"
+                        android:background="@drawable/edittext_borderwhite"
                         android:fontFamily="@font/firasans"
                         android:hint="Nome de usuário"
                         android:padding="8dp"
                         android:textColor="#3A1A01"
                         android:textSize="15sp"
                         android:textStyle="bold"
+                        android:textColorHint="@color/color_hint_text"
 
                         />
 
@@ -122,7 +127,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="42dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/edittext_border"
+                        android:background="@drawable/edittext_borderwhite"
                         android:fontFamily="@font/firasans"
                         android:hint="Senha"
                         android:inputType="textPassword"
@@ -130,6 +135,7 @@
                         android:textColor="#3A1A01"
                         android:textSize="15sp"
                         android:textStyle="bold"
+                        android:textColorHint="@color/color_hint_text"
 
                         />
 
@@ -138,7 +144,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="42dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/edittext_border"
+                        android:background="@drawable/edittext_borderwhite"
                         android:fontFamily="@font/firasans"
                         android:hint="Confirmar senha"
                         android:inputType="textPassword"
@@ -146,6 +152,7 @@
                         android:textColor="#3A1A01"
                         android:textSize="15sp"
                         android:textStyle="bold"
+                        android:textColorHint="@color/color_hint_text"
 
                         />
 
@@ -154,14 +161,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="42dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/edittext_border"
+                        android:background="@drawable/edittext_borderwhite"
                         android:fontFamily="@font/firasans"
                         android:hint="Email"
                         android:inputType="text"
                         android:padding="8dp"
                         android:textColor="#3A1A01"
                         android:textSize="15sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColorHint="@color/color_hint_text"
+                        />
 
                 </LinearLayout>
 
@@ -261,8 +270,8 @@
                         android:fontFamily="sans-serif"
                         android:gravity="center"
                         android:text="Já possui conta?"
-                        android:textColor="@color/Preto"
                         android:textSize="20dp"
+                        android:textColor="@color/text_primary_light"
                         />
 
                     <TextView

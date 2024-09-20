@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="background_light">#FFE7A6</color>
+    <color name="text_primary_light">#3A1A01</color>
+    <color name="text_secondary_light">#FFB1B1B1</color>
+    <color name="button_light">#EAA353</color>
+    <color name="hint_text_light">#FFB1B1B1</color>
+    <color name="edittext_background_light">#FFFFFF</color>
+    <color name="divider_light">#EAA353</color>
+    <color name="border_gray_light">#CCCCCC</color>
+    <color name="color_hint_text">#C1C1C1</color>
+
     <color name="Preto">#FF000000</color>
     <color name="Branco">#FFFFFFFF</color>
     <color name="Vermelho">#FF9C9C</color>
     <color name="Cinza">#B1B1B1</color>
+
+
 </resources>
