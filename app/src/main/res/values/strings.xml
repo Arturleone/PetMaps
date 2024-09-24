@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">PetMaps</string>
     <string name="styled_text">Bem-vindo ao PetMaps.\nJunte-se à causa</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_perfil">Perfil</string>
+    <string name="title_ongs">Ongs</string>
+    <string name="title_chat">Chat</string>
 </resources>

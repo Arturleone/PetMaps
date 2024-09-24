@@ -6,6 +6,7 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Patterns
 import android.view.View
+import android.view.Window
 import android.widget.Button
 import android.widget.EdgeEffect
 import android.widget.EditText
@@ -23,8 +24,6 @@ class Cadastro : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_cadastro)
-        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
-        actionBar?.show()
 
         val possuoCadastro = findViewById<TextView>(R.id.possuocadastro)
         val nome = findViewById<EditText>(R.id.Nome)
